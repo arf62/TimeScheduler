@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Simple Customer Application</display-name>
+  <welcome-file-list>
+    <welcome-file>MasterPage.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>customer</servlet-name>
+    <servlet-class>com.ActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customer</servlet-name>
+    <url-pattern>/insertCustomer</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>GetCourse</servlet-name>
+    <servlet-class>com.GetCourse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCourse</servlet-name>
+    <url-pattern>/form_action_Course</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>NewAction</servlet-name>
+    <servlet-class>com.NewActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewAction</servlet-name>
+    <url-pattern>/New_form_action_Course</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <servlet>
+    <servlet-name>AllRoomsAction</servlet-name>
+    <servlet-class>com.AllRoomsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllRoomsAction</servlet-name>
+    <url-pattern>/get_room_details</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <servlet>
+    <servlet-name>AllProfAction</servlet-name>
+    <servlet-class>com.GetProfServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllProfAction</servlet-name>
+    <url-pattern>/form_action_ProfId</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <servlet>
+    <servlet-name>ProfTimeAction</servlet-name>
+    <servlet-class>com.ProfessorTimeTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfTimeAction</servlet-name>
+    <url-pattern>/to_proftime_Action</url-pattern>
+  </servlet-mapping>
+  
+ 
+ 
+  
+  
+</web-app>
